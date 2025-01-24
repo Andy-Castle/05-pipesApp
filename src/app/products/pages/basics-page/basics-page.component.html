@@ -16,7 +16,7 @@
   </div>
 
   <div class="col-12 md:col-6">
-    <p-card header="titlecase">
+    <p-card header="Fechas">
       <ol>
         <li>Fecha</li>
         <li>Fecha | date</li>
@@ -29,12 +29,15 @@
       <ol>
         <li>fecha | date:"long":"GMT-6"</li>
         <li>fecha | date:"long":"GMT-4"</li>
+        <li>fecha | date:"long":"":"es-MX"</li>
+        <li>fecha | date:"long":"":"en-US"</li>
+        <li>fecha | date:"long":"":"ja"</li>
       </ol>
     </p-card>
   </div>
 
   <div class="col-12 md:col-6">
-    <p-card header="titlecase">
+    <p-card header="Fechas">
       <ol>
         <li>{{ customDate }}</li>
         <li>{{ customDate | date }}</li>
@@ -48,6 +51,9 @@
       <ol>
         <li>{{ customDate | date : "long" : "GMT-6" }}</li>
         <li>{{ customDate | date : "long" : "GMT-4" }}</li>
+        <li>{{ customDate | date : "long" : "" : "es-MX" }}</li>
+        <li>{{ customDate | date : "long" : "" : "en-US" }}</li>
+        <li>{{ customDate | date : "long" : "" : "ja" }}</li>
       </ol>
     </p-card>
   </div>
